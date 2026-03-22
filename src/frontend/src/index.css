@@ -1,0 +1,62 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: "Plus Jakarta Sans";
+  src: url("/assets/fonts/PlusJakartaSans.woff2") format("woff2");
+  font-weight: 200 700;
+  font-display: swap;
+}
+
+@layer base {
+  :root {
+    --radius: 0.5rem;
+    /* Page bg: very light blue-gray #EEF2F6 -> oklch(0.955 0.012 240) */
+    --background: 0.955 0.012 240;
+    /* Cards white */
+    --card: 1 0 0;
+    --card-foreground: 0.26 0.023 256;
+    --popover: 1 0 0;
+    --popover-foreground: 0.26 0.023 256;
+    /* Primary text #1F2937 */
+    --foreground: 0.26 0.023 256;
+    /* Deep navy #0B2442 */
+    --primary: 0.22 0.068 248;
+    --primary-foreground: 0.985 0 0;
+    --secondary: 0.94 0.008 240;
+    --secondary-foreground: 0.26 0.023 256;
+    --muted: 0.94 0.008 240;
+    --muted-foreground: 0.52 0.018 245;
+    --accent: 0.94 0.008 240;
+    --accent-foreground: 0.26 0.023 256;
+    --destructive: 0.577 0.245 27.325;
+    --destructive-foreground: 0.985 0 0;
+    --border: 0.87 0.012 240;
+    --input: 0.87 0.012 240;
+    --ring: 0.22 0.068 248;
+    --success: 0.86 0.09 152;
+    --success-foreground: 0.25 0.08 152;
+    --chart-1: 0.646 0.222 41.116;
+    --chart-2: 0.6 0.118 184.704;
+    --chart-3: 0.398 0.07 227.392;
+    --chart-4: 0.828 0.189 84.429;
+    --chart-5: 0.769 0.188 70.08;
+    --sidebar: 0.985 0 0;
+    --sidebar-foreground: 0.145 0 0;
+    --sidebar-primary: 0.205 0 0;
+    --sidebar-primary-foreground: 0.985 0 0;
+    --sidebar-accent: 0.97 0 0;
+    --sidebar-accent-foreground: 0.205 0 0;
+    --sidebar-border: 0.922 0 0;
+    --sidebar-ring: 0.708 0 0;
+  }
+
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground;
+    font-family: "Plus Jakarta Sans", "Inter", system-ui, sans-serif;
+  }
+}
